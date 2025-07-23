@@ -44,15 +44,14 @@
         opacity: 1;
         transform: scale(1);
       }
-    }
-.logo {
+    }.logo {
   width: 100%;
-  max-width: 450px;
-  margin: 0 auto 25px auto;
+  max-width: 405px;            /* ✅ %10 küçültülmüş */
+  margin: 0 auto 25px auto;    /* Ortalanmış ve alt boşluklu */
   display: block;
   opacity: 0;
   animation: logoDrop 1.2s ease 0.5s forwards;
-  transform: translateY(-30px) translateX(-50px);
+  transform: translateY(-30px);
 }
 
 @keyframes logoDrop {
