@@ -46,18 +46,21 @@
       }
     }
    .logo {
-  width: 220px;               /* ✅ Logo boyutu — ne büyük ne küçük */
-  margin: 30px auto;          /* ✅ Yukarıdan ve aşağıdan boşluk, yatayda ortalama */
-  display: block;             /* ✅ Ortalamayı etkinleştirir */
-  opacity: 0;                 /* ✅ Açılış efekti için gizli başlatır */
+  width: 500px;               /* 🔥 Gövde gibi logo geliyor */
+  margin: 0 auto 25px auto;   /* Ortalanmış, altta nefes alıyor */
+  display: block;
+  opacity: 0;
   animation: logoDrop 1.2s ease 0.5s forwards;
   transform: translateY(-30px);
 }
-    @keyframes logoDrop {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+
+@keyframes logoDrop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
     }
    h2 {
   font-size: 37.5px;
