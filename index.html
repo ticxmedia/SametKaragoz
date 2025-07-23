@@ -45,16 +45,14 @@
         transform: scale(1);
       }
     }
-    .logo {
-      width: 500px;
-        margin-top: -182px;
-    margin-bottom: -121px;
-      
-      display: block;
-      opacity: 0;
-      animation: logoDrop 1.2s ease 0.5s forwards;
-      transform: translateY(-30px);
-    }
+   .logo {
+  width: 220px;               /* ✅ Logo boyutu — ne büyük ne küçük */
+  margin: 30px auto;          /* ✅ Yukarıdan ve aşağıdan boşluk, yatayda ortalama */
+  display: block;             /* ✅ Ortalamayı etkinleştirir */
+  opacity: 0;                 /* ✅ Açılış efekti için gizli başlatır */
+  animation: logoDrop 1.2s ease 0.5s forwards;
+  transform: translateY(-30px);
+}
     @keyframes logoDrop {
       to {
         opacity: 1;
