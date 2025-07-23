@@ -45,15 +45,14 @@
         transform: scale(1);
       }
     }
-  .logo {
-  width: 600px;               /* ✅ Kafana denk boyut 😅 */
-  margin: 0 auto 25px auto;   /* Ortalanmış ve alttan boşluklu */
+.logo {
+  width: 400px;               /* ✅ Kırpılmış hal için ideal boyut */
+  margin: 20px auto 20px auto; /* ✅ Ortalanmış, üst-alt dengeli boşluk */
   display: block;
   opacity: 0;
   animation: logoDrop 1.2s ease 0.5s forwards;
   transform: translateY(-30px);
 }
-
 
 @keyframes logoDrop {
   to {
