@@ -46,15 +46,14 @@
       }
     }
 .logo {
-  width: 100%;                 /* ✅ Ekrana göre otomatik uyum */
-  max-width: 450px;            /* ✅ Kırpılmış haliyle taşmadan tok görünüm */
-  margin: 0 auto 25px auto;    /* ✅ Ortalanmış ve alttan boşluklu */
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 25px auto;
   display: block;
   opacity: 0;
   animation: logoDrop 1.2s ease 0.5s forwards;
-  transform: translateY(-30px);
+  transform: translateY(-30px) translateX(-5%);
 }
-
 
 @keyframes logoDrop {
   to {
