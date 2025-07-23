@@ -46,8 +46,9 @@
       }
     }
 .logo {
-  width: 400px;               /* ✅ Kırpılmış hal için ideal boyut */
-  margin: 20px auto 20px auto; /* ✅ Ortalanmış, üst-alt dengeli boşluk */
+  width: 100%;                 /* ✅ Ekrana tam oturur, taşmaz */
+  max-width: 600px;            /* ✅ Kafana denk boyut ama sınırlı */
+  margin: 0 auto 25px auto;    /* ✅ Ortalanmış ve alt boşluklu */
   display: block;
   opacity: 0;
   animation: logoDrop 1.2s ease 0.5s forwards;
